@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body{
+            font-family:Arial, Helvetica, sans-serif ;
+        }
+        table{
+            border-collapse:collapse;
+            width: 500px;
+        }
+        th{
+            background-color: whitesmoke;
+            padding: 7px;
+            border: 1px solid black;
+        }
+        td{
+            padding: 7px;
+            border: 1px solid black;
+        }
+        .n,.s{
+            background-color: rgb(214, 216, 213);
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col class="n">
+        <col class="i">
+        <col class="s">
+        <col class="p">
+        </colgroup>
+        <caption>
+            Informações Pessoais
+        </caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Sexo</th>
+                <th scope="col">Peso</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Júlio</td>
+                <td>21</td>
+                <td>M</td>
+                <td>72kg</td>
+            </tr>
+            <tr>
+                <td>Cláudia</td>
+                <td>17</td>
+                <td>F</td>
+                <td>57kg</td>
+            </tr>
+            <tr>
+                <td>Alberto</td>
+                <td>35</td>
+                <td>M</td>
+                <td>75kg</td>
+            </tr>
+            <tr>
+                <td>Catarine</td>
+                <td>27</td>
+                <td>F</td>
+                <td>59kg</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
