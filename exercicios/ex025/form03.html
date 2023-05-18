@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="registro.php">
+        <form autocomplete="on" action="get">
+            <p>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required placeholder="Nome completo" minlength="10" maxlength="40" size="15" autocomplete="name">
+            </p>
+            <p>
+                <label for="inota">Nota</label>
+                <input type="number" name="nota" id="inota" required step="0.1" value="5" min="0" max="10" >
+            </p>
+            <p>
+                <label for="imes">Mês</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+            <p>
+                <label for="idata">Data</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </form>
+    </form>
+</body>
+</html>
