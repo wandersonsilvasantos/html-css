@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/*Estilos diferentes*/
+@media print{
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display:block;}
+    #pc{display:none;}
+    #tv{display:none;}
+    main::after{content: 'Site desenvolvido por Wanderson Silva dos santos'}
+    main h1{
+        color: black;
+        text-shadow: none;
+    }
+    main{
+        border: 1px solid black;
+        width: 90vw;
+    }
+}
+@media screen and (min-width:768px) and (max-width: 992px){
+    #phone{display: none;}
+    #tablet{display: block;}
+    #print{display:none;}
+    #pc{display:none;}
+    #tv{display:none;}
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+}
+@media screen and (min-width:992px) and (max-width: 1200px){
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display:none;}
+    #pc{display:block;}
+    #tv{display:none;}
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+}
+@media screen and (min-width:1200px){
+    #phone{display: none;}
+    #tablet{display: none;}
+    #print{display:none;}
+    #pc{display:none;}
+    #tv{display:block;}
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+    main{
+        width: 70vw;
+    }
+}
